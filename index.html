@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATH PRO - Login</title>
+    <style>
+        :root {
+            --primary: #10b981;
+            --bg-dark: #0f172a;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #f8fafc;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        /* BACKGROUND - Langsung j.jpg karena satu folder */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('j.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            z-index: -2;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.8); 
+            z-index: -1;
+        }
+
+        /* CONTAINER - Gaya identik dengan home.php lu */
+        .container {
+            background: rgba(30, 41, 59, 0.5); 
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 50px 30px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            width: 85%;
+            max-width: 400px;
+        }
+
+        .logo-text {
+            font-size: 60px;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 0;
+            line-height: 1;
+            text-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+        }
+
+        .sub-logo {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            margin-bottom: 40px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        /* BUTTON - Samakan warna & feel-nya */
+        .btn-start {
+            display: block;
+            padding: 18px;
+            background: var(--primary);
+            color: #064e3b; 
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: 800;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
+        }
+
+        .btn-start:hover {
+            transform: translateY(-3px);
+            filter: brightness(1.1);
+            box-shadow: 0 15px 30px rgba(16, 185, 129, 0.4);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-text">MP</div>
+        <div class="sub-logo">MATH PRO</div>
+        
+        <a href="home.php" class="btn-start">Mulai Math Pro</a>
+
+        <div class="footer">DIBUAT OLEH MUHAMAD FIKRI</div>
+    </div>
+
+</body>
+</html>
