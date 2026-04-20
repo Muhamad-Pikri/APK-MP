@@ -1,0 +1,220 @@
+body {
+    background: linear-gradient(135deg, #0f8f83, #0c6f66);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* TOP BAR */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+/* BOX ANGKA */
+.box {
+    border: 2px solid white;
+    margin: 20px auto;
+    padding: 40px;
+    font-size: 60px;
+    border-radius: 15px;
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+}
+
+.angka {
+    line-height: 1.2;
+}
+
+/* KEYPAD */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 300px;
+    margin: auto;
+}
+
+/* BUTTON */
+.btn {
+    padding: 25px;
+    font-size: 28px;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgba(255,255,255,0.05);
+}
+
+/* HOVER */
+.btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* KLIK */
+.btn:active {
+    transform: scale(0.9);
+}
+
+/* BENAR */
+.benar {
+    background: #22c55e !important;
+    border-color: #22c55e;
+}
+
+/* SALAH */
+.salah {
+    background: #ef4444 !important;
+    border-color: #ef4444;
+}
+
+/* INFO TEXT */
+.info {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* TOMBOL TUTUP */
+.close {
+    background: #aaa;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.close:hover {
+    background: #888;
+}
+
+/* TIMER EFFECT (biar deg-degan 😈) */
+#timer {
+    font-weight: bold;
+}
+
+/* HISTORY PAGE STYLES */
+:root {
+    --bg: #0b1120;
+    --card: rgba(15, 23, 42, 0.95);
+    --border: rgba(255, 255, 255, 0.12);
+    --primary: #10b981;
+    --accent: #38bdf8;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+}
+
+.page {
+    width: 100%;
+    max-width: 960px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: -1px;
+}
+
+.header a {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: white;
+    background: var(--primary);
+    font-weight: 700;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.header a:hover {
+    transform: translateY(-1px);
+    background: #0f766e;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+thead th {
+    text-align: left;
+    padding: 14px 12px;
+    color: var(--primary);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+tbody td {
+    padding: 14px 12px;
+    color: var(--text);
+    vertical-align: middle;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.small {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.empty {
+    margin: 0;
+    padding: 36px 0;
+    text-align: center;
+    color: var(--muted);
+}
+
+.timer-warning {
+    color: #facc15;
+}
+
+.timer-danger {
+    color: #ef4444;
+}
+
+/* RESPONSIVE (HP) */
+@media (max-width: 500px) {
+    .box {
+        font-size: 50px;
+        width: 150px;
+        padding: 30px;
+    }
+
+    .btn {
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .top {
+        font-size: 14px;
+    }
+}
